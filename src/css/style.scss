@@ -1,0 +1,65 @@
+$greenColor: #619e9e;
+$darkAccent: #224b4b;
+
+body {
+  background-color: $greenColor;
+}
+
+.window {
+  overflow: hidden;
+  margin: 2% auto;
+  textarea {
+    background-color: rgb(22, 22, 22);
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    resize: none;
+    border: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+// MARKDOWN STYLES
+#preview {
+  border-radius: 25px ;
+  font-size: 16px;
+  box-shadow: 1px 1px 10px 2px darken($greenColor, 50%);
+  background-color: aliceblue;
+  padding: 2% 8%;
+  margin: 2% auto;
+  width: 50%;
+
+  code {
+    background: white;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  pre {
+    background: white;
+    padding: 5px 0 5px 5px;
+  }
+
+  h1 {
+    border-bottom: 2px solid $darkAccent;
+  }
+
+  h2 {
+    border-bottom: 1px solid $darkAccent;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 2px solid $darkAccent;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
