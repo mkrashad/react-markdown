@@ -1,9 +1,8 @@
 import React from "react";
 import { Window, TitleBar, Text } from "react-desktop/windows";
-// import { Container } from 'react-bootstrap';
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
-import "./css/style.scss";
+import "./styles/main.scss";
 
 // Markdown Text Example
 const placeholder = `# Welcome to my React Markdown Previewer!
