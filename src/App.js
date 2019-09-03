@@ -70,14 +70,14 @@ class App extends React.Component {
     };
 
     // Binding functions
-    this.handeleMinimize = this.handeleMinimize.bind(this);
+    this.handleMinimize = this.handleMinimize.bind(this);
     this.toggleMaximize = this.toggleMaximize.bind(this);
-    this.handeleClose = this.handeleClose.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
   // Minimize Window
-  handeleMinimize() {
+  handleMinimize() {
     this.setState({
       width: 499,
       height: 40,
@@ -95,7 +95,7 @@ class App extends React.Component {
   }
 
   // Close Window
-  handeleClose() {
+  handleClose() {
     this.setState({
       hidden: true
     });
@@ -127,8 +127,8 @@ class App extends React.Component {
             title="Command Prompt"
             controls
             isMaximized={this.state.isMaximized}
-            onCloseClick={this.handeleClose}
-            onMinimizeClick={this.handeleMinimize}
+            onCloseClick={this.handleClose}
+            onMinimizeClick={this.handleMinimize}
             onMaximizeClick={this.toggleMaximize}
             onRestoreDownClick={this.toggleMaximize}
           />
